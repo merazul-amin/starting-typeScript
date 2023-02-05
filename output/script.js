@@ -1,7 +1,7 @@
 "use strict";
 let playerName = 'Masrafi';
 console.log(playerName);
-// playerName = 34;
+// playerName = 34; not allowed for implicit data type
 console.log(playerName);
 // function parameter type checking
 function multiply(a, b) {
@@ -25,3 +25,17 @@ let e = []; //only can be array of string of number
 // dynamic type or any type
 let f; //any type
 let g = [];
+//function
+let myFunc;
+// myFunc = () => {
+// }
+const yourFunc = (a, b, c) => {
+    console.log(a + b + c);
+};
+yourFunc('he', '5');
+const userDetails = (id, user) => {
+    console.log(id, user);
+};
+const sayHello = (user) => {
+    console.log(user);
+};

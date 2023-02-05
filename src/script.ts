@@ -1,6 +1,6 @@
 let playerName = 'Masrafi';
 console.log(playerName)
-// playerName = 34;
+// playerName = 34; not allowed for implicit data type
 console.log(playerName)
 
 // function parameter type checking
@@ -42,3 +42,34 @@ let e: (string | number)[] = []//only can be array of string of number
 
 let f; //any type
 let g: any[] = [];
+
+
+
+//function
+
+let myFunc: Function;
+// myFunc = () => {
+
+// }
+
+const yourFunc = (a: string, b: string, c?: string) => {  //? optional params
+    console.log(a + b + c);
+}
+
+yourFunc('he', '5')
+
+
+
+
+//type aliases
+
+type stringOfNum = string | number;
+type userType = { name: string, age: number };
+
+const userDetails = (id: stringOfNum, user: userType) => {
+    console.log(id, user);
+};
+
+const sayHello = (user: userType) => {
+    console.log(user);
+}
