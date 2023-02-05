@@ -1,3 +1,6 @@
+import { Player } from './classes/player.js'
+
+
 let playerName = 'Masrafi';
 console.log(playerName)
 // playerName = 34; not allowed for implicit data type
@@ -86,20 +89,7 @@ add = (a: number, b: number) => {
 
 //class
 
-class Player {
-    name: string;
-    age: number;
-    country: string;
 
-    constructor(n: string, a: number, c: string) {
-        this.name = n;
-        this.age = a,
-            this.country = c
-    }
-    play() {
-        console.log(this.name, this.age, this.country);
-    }
-}
 
 const masrafi = new Player('Masrafit', 40, 'Bangladesh');
 
@@ -109,3 +99,4 @@ const playersArray: Player[] = [];
 
 
 //access modifiers
+'public, private, readonly'

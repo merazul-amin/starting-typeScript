@@ -1,4 +1,4 @@
-"use strict";
+import { Player } from './classes/player.js';
 let playerName = 'Masrafi';
 console.log(playerName);
 // playerName = 34; not allowed for implicit data type
@@ -45,16 +45,7 @@ add = (a, b) => {
     return a * b;
 };
 //class
-class Player {
-    constructor(n, a, c) {
-        this.name = n;
-        this.age = a,
-            this.country = c;
-    }
-    play() {
-        console.log(this.name, this.age, this.country);
-    }
-}
 const masrafi = new Player('Masrafit', 40, 'Bangladesh');
 const playersArray = [];
 //access modifiers
+'public, private, readonly';
