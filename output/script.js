@@ -39,3 +39,22 @@ const userDetails = (id, user) => {
 const sayHello = (user) => {
     console.log(user);
 };
+// function signature
+let add;
+add = (a, b) => {
+    return a * b;
+};
+//class
+class Player {
+    constructor(n, a, c) {
+        this.name = n;
+        this.age = a,
+            this.country = c;
+    }
+    play() {
+        console.log(this.name, this.age, this.country);
+    }
+}
+const masrafi = new Player('Masrafit', 40, 'Bangladesh');
+const playersArray = [];
+//access modifiers

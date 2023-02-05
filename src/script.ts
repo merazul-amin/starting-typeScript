@@ -73,3 +73,39 @@ const userDetails = (id: stringOfNum, user: userType) => {
 const sayHello = (user: userType) => {
     console.log(user);
 }
+
+
+// function signature
+
+let add: (x: number, y: number) => number;
+add = (a: number, b: number) => {
+    return a * b
+};
+
+
+
+//class
+
+class Player {
+    name: string;
+    age: number;
+    country: string;
+
+    constructor(n: string, a: number, c: string) {
+        this.name = n;
+        this.age = a,
+            this.country = c
+    }
+    play() {
+        console.log(this.name, this.age, this.country);
+    }
+}
+
+const masrafi = new Player('Masrafit', 40, 'Bangladesh');
+
+const playersArray: Player[] = [];
+
+
+
+
+//access modifiers
